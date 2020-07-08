@@ -71,6 +71,13 @@ public class OrderedArray {
     }
 
 
+    /**
+     * size() method to return the current number of data items.
+     */
+    public int size()
+    {
+        return nElems;
+    }
 
 
 
