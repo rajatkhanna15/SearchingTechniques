@@ -53,6 +53,22 @@ public class OrderedArray {
     }
 
 
+    /**
+     * insert() method to insert the values in sorted order(ascending).
+     * Binary searching works on Sorted Data.
+     * @param value the value to be inserted.
+     */
+    public void insert(long value)
+    {
+        int j ;
+        for(j = 0; j <nElems; j++)
+            if(array[j] > value)
+                break;
+        for(int k = nElems; k > j; k++)
+            array[k] = array[k-1];
+        array[j] = value;
+        nElems++;
+    }
 
 
 
