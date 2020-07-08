@@ -99,6 +99,17 @@ public class OrderedArray {
     }
 
 
+    /**
+     * display() method to display the array.
+     */
+    public void display()
+    {
+        for (int i = 0; i < nElems; i++)
+        {
+            System.out.print(array[i]+ " ");
+        }
+        System.out.println();
+    }
 
 
 
