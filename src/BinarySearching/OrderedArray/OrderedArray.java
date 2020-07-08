@@ -25,5 +25,32 @@ public class OrderedArray {
     }
 
 
+    /**
+     * find() method to check whether a given value is present in the given array or not(the basic binary Searching implementation method.
+     * @param searchKey the searchKey(value to be searched).
+     */
+    public int find(long searchKey)
+    {
+        int lowerBound = 0;
+        int upperBound = nElems - 1;
+        int middleValue;
+
+        while(true)
+        {
+            middleValue = (lowerBound + upperBound) / 2;
+            if(array[middleValue] == searchKey)
+                return middleValue;
+            else if(lowerBound > upperBound)
+                return nElems;
+            else
+            {
+                if(array[middleValue] < searchKey)
+                   lowerBound = middleValue + 1;               //upper half
+                else
+                    upperBound = middleValue - 1;              //lower half
+            }
+        }
+    }
+
 
 }
