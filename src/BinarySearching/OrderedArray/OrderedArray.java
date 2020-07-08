@@ -80,6 +80,23 @@ public class OrderedArray {
     }
 
 
+    /**
+     * delete() method to delete a particular value from the given array.
+     * @param value the value to be deleted.
+     */
+    public boolean delete(long value)
+    {
+        int j = find(value);
+        if(j == nElems)
+            return false;
+        else
+        {
+            for(int k=j; k<nElems; k++)
+                array[k] = array[k+1];
+            nElems--;
+            return true;
+        }
+    }
 
 
 
