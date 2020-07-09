@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args)
     {
-        int maxSize = 100;
+        int maxSize = 50;
         //Creating object of OrderedArray class.
          OrderedArray arr = new OrderedArray(maxSize);
         //Calling of methods
