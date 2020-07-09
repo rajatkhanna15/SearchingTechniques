@@ -42,5 +42,4 @@ public class SimpleArray {
                 return i;
             return -1;
     }
-
 }
