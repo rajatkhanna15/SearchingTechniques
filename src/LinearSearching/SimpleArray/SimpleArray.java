@@ -29,5 +29,18 @@ public class SimpleArray {
     }
 
 
+    /**
+     * find() method to show the basic implementation of linear searching.
+     * @param searchKey the searchKey.
+     * @return  the index where the element is found otherwise -1.
+     *
+     */
+    public int find(int searchKey)
+    {
+        for(int i = 0; i < array.length;i++)
+            if(array[i] == searchKey)
+                return i;
+            return -1;
+    }
 
 }
