@@ -20,6 +20,12 @@ public class SimpleArray {
         nElems = 0 ;
     }
 
-
+    /**
+     * size() method to return the current number of data items.
+     */
+    public int size()
+    {
+        return nElems;
+    }
 
 }
