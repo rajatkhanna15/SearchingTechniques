@@ -11,7 +11,7 @@ public class SimpleArray {
      * @param searchKey the value to be searched
      * @return index of searchkey if found else -1
      */
-    public int find(long[] inputArray,int searchKey)
+    public int find(int[] inputArray,int searchKey)
     {
         for (int i = 0; i < inputArray.length; i++) {
             if(inputArray[i] == searchKey)
